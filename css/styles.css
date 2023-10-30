@@ -114,10 +114,18 @@ body, html {
 
 @media screen and (max-width: 767px) {
 
-    
+    .navbar {
+        position: relative; /* Posiciona o navbar de forma relativa */
+    }
     .nav__toggle {
         display: block;
+        position: absolute; /* Posiciona o elemento de forma absoluta */
+        right: 15px; /* Posiciona o toggle 15px distante da borda direita. Ajuste conforme necessário */
+        top: 50%;
+        transform: translateY(-50%); 
+    
     }
+
     .uil-bars {
         font-size: inherit; /* Garante que o ícone herde o tamanho da fonte do elemento pai */
     }
