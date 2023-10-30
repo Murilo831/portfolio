@@ -6,7 +6,15 @@ body, html {
     height: 100%;
 }
 
+.container {
+    max-width: 1400px; /* Ou qualquer outro valor que você achar adequado */
+    margin: 0 auto;    /* Centraliza o container */
+    padding: 0 20px;   /* Adiciona um pequeno padding nas laterais para evitar que o conteúdo toque as bordas em telas menores */
+}
+
+
 .titulo {
+    margin-top: 70px;
     text-align: center;
     animation: slideFromRight 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards; /* Animação mais suave do lado direito */
 }
@@ -112,7 +120,7 @@ body, html {
 }
 
 
-@media (max-width: 1380px) {
+@media (max-width: 1600px) {
     .projeto-card {
         flex-basis: calc(50% - 20px); 
     }
