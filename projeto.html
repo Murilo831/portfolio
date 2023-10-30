@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator Sidebar Responsiva</title>
+    <!-- UNICONS -->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projeto.css">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css" />
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo">MURILO NOGUEIRA <i class="uil uil-arrow"></i></a>
+            <nav class="navbar__menu">
+                <a href="projeto.html">Projetos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contanto.html">Contato</a>
+            </nav>
+            <div class="nav__toggle" onclick="openNav()" id="nav-toggle">
+                <i class="uil uil-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">MURILO NOGUEIRA</a>
+        <a href="projeto.html"> Projetos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contanto.html">Contato</a>
+        <!-- ... outros links ... -->
+    </div>
+
+    
+    <!-- Adicione o elemento overlay aqui -->
+    <div id="overlay" class="overlay" onclick="closeNav()"></div>
+
+    <div id="main">
+        <div class="titulo">
+            <h1>Todos os meus projetos</h1>
+        </div>
+
+        <div class="descrição">
+            <p>Em minha trajetória como desenvolvedor, tive a oportunidade de trabalhar com diversas tecnologias e enfrentar desafios únicos. Abaixo, você encontrará alguns dos meus projetos favoritos que representam essa jornada. Dentre as tecnologias com as quais tive mais contato, destaco: HTML, Python, Django, Data Science e Machine Learning. </p>
+        </div>
+
+        <div class="projetos-container">
+
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img1.jpg" alt="Descrição da imagem 1">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 1</h3>
+                    <a href="link_para_github_projeto1" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto1" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+        
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img2.jpg" alt="Descrição da imagem 2">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 2</h3>
+                    <a href="link_para_github_projeto2" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto2" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+        
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img3.jfif" alt="Descrição da imagem 3">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <a href="link_para_github_projeto3" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto3" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div> 
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img4.jpg" alt="Descrição da imagem 3">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <a href="link_para_github_projeto3" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto3" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img5.jpg" alt="Descrição da imagem 5">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <a href="link_para_github_projeto3" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto3" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img5.jpg" alt="Descrição da imagem 5">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <a href="link_para_github_projeto3" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto3" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+        
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img5.jpg" alt="Descrição da imagem 5">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <a href="link_para_github_projeto3" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto3" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+        
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img5.jpg" alt="Descrição da imagem 5">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <a href="link_para_github_projeto3" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto3" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+        
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img5.jpg" alt="Descrição da imagem 5">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <a href="link_para_github_projeto3" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto3" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+        
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img5.jpg" alt="Descrição da imagem 5">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <a href="link_para_github_projeto3" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto3" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+        
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img5.jpg" alt="Descrição da imagem 5">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <a href="link_para_github_projeto3" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto3" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+        
+            <div class="projeto-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="img/img5.jpg" alt="Descrição da imagem 5">
+                <div class="projeto-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <a href="link_para_github_projeto3" target="_blank"><i class="uil uil-github"></i></a>
+                    <a href="link_para_demo_projeto3" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                </div>
+            </div>
+        
+        
+        </div>
+        
+        
+        
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      
+</body>
+</html>

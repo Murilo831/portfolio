@@ -1,0 +1,80 @@
+
+body, html {
+    height: 100%; /* Garante que o body e o html tenham 100% da altura da janela do navegador */
+    margin: 0;    /* Remove as margens padrão */
+    font-family: Arial, sans-serif; /* Uma fonte padrão, você pode alterar se necessário */
+}
+
+.contato {
+    display: flex;          /* Habilita flexbox */
+    align-items: center;    /* Centraliza verticalmente */
+    justify-content: center;/* Centraliza horizontalmente */
+    height: 100%;           /* 100% da altura do body/html */
+    flex-direction: column; /* Os itens são organizados em uma coluna */
+    padding: 20px;          /* Espaçamento interno para a div .contato */
+}
+
+.contato label {
+    font-weight: bold;
+    margin-bottom: 15px; /* ajuste este valor conforme o espaçamento desejado */
+}
+
+form {
+    max-width: 700px;       /* Aumenta a largura máxima do formulário */
+    margin: 10px auto 50px; 
+    padding: 30px;          /* Aumenta o espaçamento interno do formulário */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;         /* Aumenta o espaçamento interno dos campos de entrada */
+    margin-bottom: 15px;   /* Aumenta o espaço entre os campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;       /* Aumenta o tamanho da fonte dentro dos campos */
+    transition: border-color 0.3s;
+}
+
+form textarea {
+    height: 200px;         /* Aumenta a altura do textarea */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+form button[type="submit"] {
+    background-color: #ffffff;    /* Fundo branco */
+    color: #000;                  /* Texto preto */
+    cursor: pointer;
+    border: 1px solid #000;       /* Borda preta com 2px de espessura */
+    padding: 15px 30px;           /* Aumenta o tamanho do botão ajustando o padding */
+    border-radius: 5px;          /* Aumenta o arredondamento da borda */
+    font-size: 18px;              /* Aumenta o tamanho da fonte do botão */
+    display: block;               /* O botão ocupa toda a largura */
+    margin: 20px auto 0;          /* Centraliza o botão horizontalmente e adiciona espaço acima dele */
+    transition: background-color 0.3s, border-color 0.3s; /* Transição suave para as cores de fundo e borda */
+}
+
+form button[type="submit"]:hover {
+    background-color: #ccc;       /* Fundo cinza quando passa o mouse */
+    border-color: #999;           /* Borda um pouco mais clara quando passa o mouse */
+}
+
+form button[type="submit"]:active {
+    background-color: #aaa;       /* Fundo um pouco mais escuro quando clica */
+    border-color: #777;           /* Borda um pouco mais escura quando clica */
+}
+
+
+
+.mensagem {
+    font-size: 25px;
+    text-align: center;
+    color: #333; /* Cor mais escura para dar ênfase */
+    font-weight: bold; /* Deixa o texto em negrito */
+    max-width: 600px; /* Um pouco mais largo para acomodar a mensagem */
+    margin: 0 auto 30px; /* Mais espaço na parte inferior para separação */
+    line-height: 1.5; /* Espaçamento entre as linhas para melhor leitura */
+}

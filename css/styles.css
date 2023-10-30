@@ -1,0 +1,127 @@
+body, html {
+    font-family: "Arial", sans-serif;
+    transition: margin-left .5s;
+    margin: 0;
+    height: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0; bottom: 0; left: 0;
+    background: rgba(0, 0, 0, 0.4); /* corrigido o uso de rgba */
+    z-index: 2;
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;  /* Alterado para right */
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);  /* Alterado a direção da sombra */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #333;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #666;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #333;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+#main {
+    margin-top: 70px;
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/***/
+
+
+
+.navbar {
+    height: 50px;  /* Adicionei 20px de altura adicional para acomodar o padding */
+    width: 100%;
+    box-sizing: border-box;  /* Adiciona box-sizing */
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    width: calc(100% - 100px);  /* Subtrai o padding de ambos os lados */
+    box-sizing: border-box;  /* Adiciona box-sizing */
+}
+
+.navbar__logo {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 20px; /* Espaço entre os links */
+    
+}
+
+.navbar__menu a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar__menu a:hover {
+    color: #ddd;
+}
+
+.nav__toggle {
+    cursor: pointer;
+    display: none;
+    font-size: 24px; /* Ajuste esse valor para o tamanho desejado */
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .nav__toggle {
+        display: block;
+    }
+    .uil-bars {
+        font-size: inherit; /* Garante que o ícone herde o tamanho da fonte do elemento pai */
+    }
+
+    .navbar__menu{
+        display: none;
+    }
+}

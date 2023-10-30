@@ -1,0 +1,127 @@
+
+body, html {
+    font-family: "Arial", sans-serif;
+    transition: margin-left .5s;
+    margin: 0;
+    height: 100%;
+}
+
+.titulo {
+    text-align: center;
+    animation: slideFromRight 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards; /* Animação mais suave do lado direito */
+}
+
+.descrição p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #333;
+    padding: 0 15px;
+    animation: slideFromLeft 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards; /* Animação mais suave do lado esquerdo */
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%); /* Começa do lado direito */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%); /* Começa do lado esquerdo */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* coitainer */
+
+/* Container dos projetos */
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* Adiciona espaço acima e abaixo */
+    flex-wrap: wrap; /* Permitirá que os itens se ajustem à próxima linha se não houver espaço suficiente */
+}
+
+
+.projeto-card {
+    flex-basis: calc(33% - 20px); 
+    padding: 10px;
+    box-sizing: border-box; 
+    position: relative;
+    width: 20px;
+    margin-bottom: 20px;
+}
+
+.projeto-card img {
+    width: 100%;
+    height: auto; /* Altura fixa para as imagens. Ajuste conforme necessário. */
+    display: block;
+    border: 2px solid #333;
+    border-radius: 10px; /* Borda arredondada */
+    object-fit: cover; /* Isso irá garantir que as imagens cubram o espaço sem distorcer */
+}
+
+.projeto-info a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.projeto-info a:hover {
+    text-decoration: underline;
+}
+
+.projeto-info i {
+    font-size: 24px;  /* Ajuste este valor conforme o tamanho desejado */
+    margin-right: 8px; /* Espaçamento à direita do ícone para separá-lo do próximo elemento */
+}
+
+.projeto-info {
+    display: flex;         /* Habilita flexbox */
+    align-items: center;   /* Alinha os itens verticalmente no centro */
+    justify-content: space-between; /* Alinha os itens com espaço máximo entre eles */
+    gap: 10px;             /* Espaço entre os itens */
+    margin-top: 10px;
+}
+
+.projeto-info h3 {
+    margin: 0;             /* Remove margens do título */
+    flex-grow: 1;          /* Permite que o h3 ocupe o espaço máximo disponível */
+}
+
+.projeto-info a {
+    font-size: 24px;       /* Define o tamanho do ícone */
+    margin-right: 8px;    /* Espaçamento à direita do ícone */
+}
+
+/* Se desejar que o último ícone não tenha margem à direita */
+.projeto-info a:last-child {
+    margin-right: 0;
+}
+
+
+@media (max-width: 1380px) {
+    .projeto-card {
+        flex-basis: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 980px) {
+    .projeto-card {
+        flex-basis: 100%; 
+    }
+}
+
+
