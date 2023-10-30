@@ -85,6 +85,7 @@ body, html {
     color: #000;
     text-decoration: none;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .navbar__menu {
@@ -97,6 +98,7 @@ body, html {
     color: #000;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 20px;
 }
 
 .navbar__menu a:hover {
