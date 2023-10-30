@@ -57,6 +57,13 @@ body, html {
 }
 
 
+.container {
+    max-width: 1300px; /* Ou qualquer outro valor que você achar adequado */
+    margin: 0 auto;    /* Centraliza o container */
+    padding: 0 20px;   
+    text-align: center;
+}
+
 /***/
 
 
@@ -111,6 +118,55 @@ body, html {
     font-size: 24px; /* Ajuste esse valor para o tamanho desejado */
     padding: 10px;
 }
+
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap; /* Evita que as palavras quebrem em duas linhas */
+    width: 100%;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: scrollLeft 10s linear infinite; 
+}
+
+.marquee-content span {
+    padding: 10px 30px; /* Ajuste o padding conforme necessário */
+    display: inline-flex; /* Alterado de inline-block para inline-flex para acomodar o círculo */
+    align-items: center; /* Alinhe os itens no centro verticalmente */
+    border: 2px solid #000; 
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.circle {
+    display: inline-block;
+    width: 12px; /* Tamanho do círculo */
+    height: 12px;
+    border-radius: 50%; /* Faz o círculo arredondado */
+    margin-right: 10px; /* Espaço entre o círculo e o texto */
+}
+
+.circle.red { background-color: red; }
+.circle.blue { background-color: blue; }
+.circle.green { background-color: green; }
+.circle.yellow { background-color: yellow; }
+.circle.purple { background-color: purple; }
+.circle.pink { background-color: pink; }
+.circle.black { background-color: black; }
+
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(100%); /* Começa da direita */
+    }
+    100% {
+        transform: translateX(-100%); /* Move completamente para a esquerda */
+    }
+}
+
 
 
 
