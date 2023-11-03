@@ -3,7 +3,25 @@ body, html {
     transition: margin-left .5s;
     margin: 0;
     height: 100%;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor de texto primária */
+    text-align: center; /* Centraliza o texto */
+    
 }
+
+h1 {
+  font-size: 2em; /* Tamanho da fonte */
+  margin-top: 50px; /* Espaçamento superior */
+  color: #333; /* Cor do texto do título */
+  
+}
+
+h1 span {
+  display: block;
+  font-size: 0.5em; /* Tamanho da fonte para o subtítulo */
+  margin-top: 20px; /* Espaçamento superior para o subtítulo */
+}
+
 
 .overlay {
     position: fixed;
