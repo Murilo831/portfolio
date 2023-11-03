@@ -195,8 +195,11 @@ h1 span {
     display: inline-block !important;
     width: 2px !important; /* Tamanho do círculo */
     height: 2px !important;
+    border-radius: 50% !important; /* Faz o círculo arredondado */
     margin-right: 5px !important; /* Espaço entre o círculo e o texto */
     vertical-align: middle;
+    border: none !important;
+    text-align: center !important;
 }
 
 .circle.red { background-color: #FF4136; } /* Vermelho */
