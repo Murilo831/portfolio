@@ -192,20 +192,23 @@ h1 span {
 }
 
 .circle {
-    display: inline-block;
-    width: 12px; /* Tamanho do círculo */
-    height: 12px;
-    border-radius: 50%; /* Faz o círculo arredondado */
-    margin-right: 10px; /* Espaço entre o círculo e o texto */
+    display: inline-block !important;
+    width: 2px !important; /* Tamanho do círculo */
+    height: 2px !important;
+    margin-right: 5px !important; /* Espaço entre o círculo e o texto */
+    vertical-align: middle;
 }
 
-.circle.red { background-color: red; }
-.circle.blue { background-color: blue; }
-.circle.green { background-color: green; }
-.circle.yellow { background-color: yellow; }
-.circle.purple { background-color: purple; }
-.circle.pink { background-color: pink; }
-.circle.black { background-color: black; }
+.circle.red { background-color: #FF4136; } /* Vermelho */
+.circle.blue { background-color: #0074D9; } /* Azul */
+.circle.green { background-color: #2ECC40; } /* Verde */
+.circle.yellow { background-color: #FFDC00; } /* Amarelo */
+.circle.purple { background-color: #B10DC9; } /* Roxo */
+.circle.orange { background-color: #FF851B; } /* Laranja, como alternativa ao rosa */
+.circle.black { background-color: #111111; } /* Preto */
+.circle.teal { background-color: #39CCCC; } /* Azul-esverdeado */
+.circle.white {background-color: #f4f4f4;}
+
 
 
 @keyframes scrollLeft {
@@ -289,17 +292,21 @@ h1 span {
 
     /* Modificado para aplicar estilo aos elementos span */
     .marquee span {
-        display: inline-block;
-        width: var(--size);
-        text-align: center;
-        background: var(--color-bg-accent);
-        padding: calc(var(--size) / 15); /* Padding menor */
-        border-radius: 0.25rem; /* Bordas menos arredondadas */
-        color: var(--color-text);
-        font-family: "Verdana", sans-serif;
-        font-size: 16px; /* Tamanho de fonte menor */
-        margin: 0 var(--gap); /* Espaçamento horizontal entre os elementos */
+      display: inline-block;
+      width: auto; /* Ajustado para auto */
+      text-align: left;
+      background: transparent; /* Remove o fundo */
+      padding: calc(var(--size) / 15); /* Padding mantido */
+      border: 2px solid #ccc; /* Borda mais grossa e azul */
+      border-radius: 20px; /* Bordas mais arredondadas */
+      color: #333;
+      font-family: "Verdana", sans-serif;
+      font-size: 16px; /* Tamanho de fonte mantido */
+      margin: 0 var(--gap); /* Espaçamento horizontal mantido */
+      font-weight: bold;
     }
+    
+  
 
   
   .marquee__group {
