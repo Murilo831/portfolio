@@ -466,6 +466,34 @@ h1 span {
     }
   }
 
+/* Link dos projetos */
+
+.index-info-projeto{
+  margin-bottom: 20px;
+}
+
+.index-info-projeto a {
+  text-decoration: none; /* Remove o sublinhado do link */
+  margin-right: 10px; /* Adiciona um espaçamento à direita dos ícones (ajuste conforme necessário) */
+}
+
+.index-info-projeto i {
+  font-size: 24px; /* Aumenta o tamanho do ícone (ajuste conforme necessário) */
+  color: black; /* Define a cor do ícone como preto */
+  margin-bottom: 55px; /* Adiciona espaçamento na parte inferior do ícone (ajuste conforme necessário) */
+}
+
+/* Imagens dos projetos na index */
+
+.img-projeto {
+  margin-bottom: 20px; 
+  transition: transform 0.5s ease-in-out; 
+}
+
+.img-projeto:hover {
+  transform: scale(1.05); 
+}
+
 
 /* Final do index*/
 
