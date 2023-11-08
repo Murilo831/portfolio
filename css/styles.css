@@ -465,3 +465,36 @@ h1 span {
       visibility: hidden;
     }
   }
+
+
+/* Final do index*/
+
+.button{
+  
+  width: 100%;
+  height: auto;
+  text-align: center;
+  
+}
+
+.button a{
+  text-decoration: none;
+  display: inline-block; /* Altere para "block" para ocupar toda a largura da div */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  background: transparent; /* Remove o fundo */
+  color: #333;
+  font-family: "Verdana", sans-serif;
+  font-size: 16px; /* Tamanho de fonte mantido */
+  margin: 0 var(--gap); /* Espaçamento horizontal mantido */
+  font-weight: bold;
+  transition: background-color 0.6s ease, color 0.6s ease, border-color 0.6s ease; /* Aumenta o tempo de transição e suaviza */
+
+}
+
+.button a:hover {
+  background-color: #000; /* Altera o fundo para azul quando o mouse passa sobre */
+  color: white; /* Altera a cor do texto para branco */
+  border-color: #000; /* Altera a cor da borda para azul */
+}
