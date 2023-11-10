@@ -597,7 +597,7 @@ h1 span {
 }
 
 
-/* title gallery */
+/* Areas de atuação */
 
 .area-description{
   margin-top: 30px;
@@ -607,8 +607,8 @@ h1 span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
   gap: 20px;
+  padding: 20px;
 }
 
 .card {
@@ -617,24 +617,34 @@ h1 span {
   width: 30%;
   max-width: 300px;
   margin-bottom: 20px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px; /* Bordas arredondadas */
+  background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Gradiente de fundo */
   padding: 20px;
   text-align: center;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  transform: scale(1.05); /* Efeito de ampliação ao passar o mouse */
 }
 
-@media (max-width: 900px) {
+h3 {
+  color: #333; /* Cor do título */
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666; /* Cor do texto */
+}
+
+@media (max-width: 800px) {
   .card {
-      width: calc(50% - 20px); /* Ajuste para telas menores */
+      width: calc(50% - 20px);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .card {
-      width: 100%; /* Ajuste para telas muito pequenas */
+      width: 100%;
   }
 }
