@@ -534,11 +534,10 @@ h1 span {
   padding: 10px; /* Espaçamento interno */
 }
 
-.img-projeto {
+.p-img-projeto {
   width: 100%;
   height: auto;
   border-radius: 15px;
-  
   transition: transform 0.5s ease-in-out; 
 }
 
@@ -551,6 +550,13 @@ h1 span {
   .p-projeto-card-text, .p-projeto-card-img {
       width: 100%; /* Ocupa toda a largura disponível */
   }
+}
+
+.img-projeto {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.5s ease-in-out; 
 }
 
 .img-projeto:hover {
