@@ -188,6 +188,34 @@ h1 span {
     padding: 10px;
 }
 
+/* Code gerado */
+
+
+.code-container {
+  background-color: #282a36; /* Cor de fundo escura */
+  color: #f8f8f2; /* Cor do texto claro */
+  font-family: 'Courier New', monospace; /* Fonte de estilo de código */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin: 20px auto; /* Espaço acima do container */
+  overflow: hidden; /* Esconde o overflow */
+  width: 100%; /* Largura total */
+  max-width: 800px; /* Largura máxima */
+  text-align: left;
+}
+
+#code {
+  white-space: pre; /* Mantém a formatação do espaço em branco */
+  overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+}
+
+pre {
+  white-space: pre-wrap; /* Mantém a formatação do espaço */
+  word-wrap: break-word; /* Quebra as palavras corretamente */
+}
+
+
+/* Fim code gerado */
 
 .marquee {
     overflow: hidden;

@@ -53,7 +53,12 @@
                 Criando códigos que dão vida às suas ideias
                 <span>Bem-vindo ao meu mundo de desenvolvimento.</span>
             </h1>
+            <div class="code-container">
+                <pre id="code"></pre>
+            </div>
         </div>
+        
+
 
         <article class="wrapper">
             <h2 class="tech-header">Tecnologias que Domino</h2>
@@ -187,28 +192,10 @@
         
     </div>
     
-
+    
     <script src="js/script.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var stream = document.querySelector('.gallery__stream');
-            var items = document.querySelectorAll('.gallery__item');
-            
-            var prev = document.querySelector('.gallery__prev');
-            prev.addEventListener('click', function() {
-                stream.insertBefore(items[items.length - 1], items[0]);
-                items = document.querySelectorAll('.gallery__item');
-            });
-            
-            var next = document.querySelector('.gallery__next');
-            next.addEventListener('click', function() {
-                stream.appendChild(items[0]);
-                items = document.querySelectorAll('.gallery__item');
-            });
-        });
     </script>
 </body>
 </html>

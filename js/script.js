@@ -10,6 +10,33 @@ function closeNav() {
     document.getElementById("overlay").style.display = "none";
 }
 
+/* Gera o texto automatico */
+
+document.addEventListener("DOMContentLoaded", function() {
+  var codeElement = document.getElementById('code');
+  if (!codeElement) return; // Se o elemento não existir, saia da função
+
+  var code = `// Código de exemplo
+function sayHello() {
+  console.log('Hello, world!');
+}
+
+sayHello();`;
+
+  var i = 0;
+  var speed = 50; // Velocidade de digitação em milissegundos
+
+  function typeCode() {
+      if (i < code.length) {
+          codeElement.innerHTML += code.charAt(i);
+          i++;
+          setTimeout(typeCode, speed);
+      }
+  }
+
+  typeCode(); // Inicia a função de digitação
+});
+
 /*
  JS to toggle scroll axis styles
 */
@@ -24,4 +51,7 @@ control.addEventListener("click", () => {
     marquee.classList.toggle("marquee--vertical")
   );
 });
+
+
+
 
