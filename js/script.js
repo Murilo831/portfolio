@@ -17,55 +17,55 @@ document.addEventListener("DOMContentLoaded", function() {
   if (!codeElement) return; // Se o elemento não existir, saia da função
 
   var codes = [
-    `// Django - Código de Rota Básica
-from django.http import HttpResponse
+    `// Desenvolvimento Web
+    from django.http import HttpResponse
 
-def home(request):
-    return HttpResponse("Olá, mundo do Django!")`,
+    def home(request):
+        return HttpResponse("Olá, mundo do Django!")`,
 
-    `# Python - Data Science com Pandas
-import pandas as pd
+        `# Data Science com Pandas
+    import pandas as pd
 
-# Carregando e exibindo os primeiros dados do dataset
-df = pd.read_csv('data.csv')
-print(df.head())`,
+    # Carregando e exibindo os primeiros dados do dataset
+    df = pd.read_csv('data.csv')
+    print(df.head())`,
 
-    `# Python - Machine Learning com scikit-learn
-from sklearn.datasets import load_iris
-from sklearn.tree import DecisionTreeClassifier
+        `# Machine Learning com scikit-learn
+    from sklearn.datasets import load_iris
+    from sklearn.tree import DecisionTreeClassifier
 
-# Carregando o dataset Iris e criando o modelo
-iris = load_iris()
-X, y = iris.data, iris.target
-clf = DecisionTreeClassifier()
-clf.fit(X, y)
+    # Carregando o dataset Iris e criando o modelo
+    iris = load_iris()
+    X, y = iris.data, iris.target
+    clf = DecisionTreeClassifier()
+    clf.fit(X, y)
 
-# Fazendo uma previsão
-print(clf.predict([X[0]]))`,
+    # Fazendo uma previsão
+    print(clf.predict([X[0]]))`,
 
-    `# Python - NLP com NLTK
-import nltk
-from nltk.tokenize import word_tokenize
+        `# NLP com NLTK - Automação
+    import nltk
+    from nltk.tokenize import word_tokenize
 
-# Exemplo de tokenização de palavras
-frase = "Olá, mundo do NLP!"
-tokens = word_tokenize(frase)
-print(tokens)`,
+    # Exemplo de tokenização de palavras
+    frase = "Olá, mundo do NLP!"
+    tokens = word_tokenize(frase)
+    print(tokens)`,
 
-    `// Kotlin - Código Básico para App Mobile
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import android.widget.TextView
+        `// Desenvolvimento Mobile
+    import android.os.Bundle
+    import androidx.appcompat.app.AppCompatActivity
+    import android.widget.TextView
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    class MainActivity : AppCompatActivity() {
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_main)
 
-        val textView = findViewById<TextView>(R.id.text_view)
-        textView.text = "Olá, mundo do Kotlin!"
-    }
-}`
+            val textView = findViewById<TextView>(R.id.text_view)
+            textView.text = "Olá, mundo do Kotlin!"
+        }
+    }`
 ];
 
   var current = 0;
