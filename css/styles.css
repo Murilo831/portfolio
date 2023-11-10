@@ -200,7 +200,7 @@ h1 span {
   margin: 20px auto; /* Espaço acima do container */
   overflow: hidden; /* Esconde o overflow */
   width: 100%; /* Largura total */
-  max-width: 800px; /* Largura máxima */
+  max-width: 500px; /* Largura máxima */
   text-align: left;
 }
 
