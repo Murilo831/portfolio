@@ -24,3 +24,4 @@ control.addEventListener("click", () => {
     marquee.classList.toggle("marquee--vertical")
   );
 });
+
