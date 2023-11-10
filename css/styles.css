@@ -542,6 +542,17 @@ h1 span {
   transition: transform 0.5s ease-in-out; 
 }
 
+/* Estilos para dispositivos com tela menor que 768 pixels */
+@media (max-width: 968px) {
+  .p-projeto-card {
+      flex-direction: column; /* Muda para layout em coluna */
+  }
+
+  .p-projeto-card-text, .p-projeto-card-img {
+      width: 100%; /* Ocupa toda a largura disponível */
+  }
+}
+
 .img-projeto:hover {
   transform: scale(1.05); 
 }
