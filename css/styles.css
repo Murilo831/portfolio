@@ -152,15 +152,34 @@ h1 span {
 }
 
 .navbar__menu a {
-    color: #000;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: 20px;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 20px;
 }
 
 .navbar__menu a:hover {
-    color: #ddd;
+  color: #ccc;
 }
+
+.navbar__menu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px; /* Ajuste conforme necessário para a posição da linha */
+  left: 0;
+  background-color: #000; /* Cor da linha */
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar__menu a:hover::after {
+  transform: scaleX(1);
+}
+
 
 .nav__toggle {
     cursor: pointer;
@@ -653,3 +672,5 @@ p {
       width: 100%;
   }
 }
+
+
