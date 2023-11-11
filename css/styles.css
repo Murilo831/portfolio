@@ -704,13 +704,22 @@ pre {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: all 0.3s ease-in-out;
   width: 30%;
-  max-width: 300px;
+  max-width: 350px;
   margin-bottom: 20px;
   border-radius: 10px; /* Bordas arredondadas */
   background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Gradiente de fundo */
   padding: 10px 20px;
   text-align: center;
 }
+
+.card p:last-of-type {
+  transition: background-color 0.3s ease-in-out; 
+}
+
+.card:hover p:last-of-type {
+  font-weight: bold;
+}
+
 
 .card:hover {
   box-shadow: 0 10px 20px 0 rgba(0,0,0,0.4);
@@ -722,23 +731,26 @@ pre {
   color: #007bff; /* Cor do título muda no hover */
 }
 
+p{
+  color: #000;
+}
+
 h3 {
   color: #000; /* Cor do título */
   margin-bottom: 10px;
 }
 
-p {
-  color: #666; /* Cor do texto */
-}
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .card {
       width: calc(50% - 20px);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  
   .card {
+      max-width: 100%;
       width: 100%;
   }
 }

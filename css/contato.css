@@ -16,7 +16,7 @@ body, html {
 
 .contato label {
     font-weight: bold;
-    margin-bottom: 15px; /* ajuste este valor conforme o espaçamento desejado */
+    margin-bottom: 15px;
 }
 
 form {
