@@ -189,6 +189,25 @@ h1 span {
 }
 
 /* Code gerado */
+
+.container-code{
+  display: flex;
+  justify-content: center; /* Espaço entre os elementos */
+  align-items: start; /* Alinhar ao topo */
+  flex-wrap: wrap; /* Permite que os itens se ajustem conforme o tamanho da tela */
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.left-content{
+  max-width: 500px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 .code-title {
   color: #000; /* Cor do texto */
   font-family: 'Arial', sans-serif; /* Fonte do título */
@@ -209,9 +228,10 @@ h1 span {
   margin: 20px auto; /* Espaço acima do container */
   overflow: hidden; /* Esconde o overflow */
   width: 100%; /* Largura total */
-  max-width: 500px; /* Largura máxima */
+  max-width: 600px; /* Largura máxima */
   text-align: left;
   border-left: 5px solid #007bff;
+  height: 300px;
 }
 
 #code {
@@ -222,6 +242,18 @@ h1 span {
 pre {
   white-space: pre-wrap; /* Mantém a formatação do espaço */
   word-wrap: break-word; /* Quebra as palavras corretamente */
+}
+
+@media screen and (max-width: 1168px) {
+  .left-content,
+  .code-container {
+      max-width: 100%; /* Ocupa toda a largura em telas menores */
+      margin: 0; /* Remove margens em telas menores */
+  }
+
+  .left-content p {
+      display: none; /* Esconde o parágrafo em telas menores */
+  }
 }
 
 
