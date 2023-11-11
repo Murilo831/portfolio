@@ -26,7 +26,7 @@ body, html {
     line-height: 1.5;
     max-width: 800px;
     margin: 20px auto;
-    color: #333;
+    color: #fff;
     padding: 0 15px;
     animation: slideFromLeft 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards; /* Animação mais suave do lado esquerdo */
 }
@@ -85,7 +85,7 @@ body, html {
 .projeto-info a {
     margin-right: 10px;
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 .projeto-info a:hover {
@@ -107,7 +107,8 @@ body, html {
 
 .projeto-info h3 {
     margin: 0;             /* Remove margens do título */
-    flex-grow: 1;          /* Permite que o h3 ocupe o espaço máximo disponível */
+    flex-grow: 1;  
+    color: #fff;
 }
 
 .projeto-info a {

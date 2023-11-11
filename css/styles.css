@@ -3,8 +3,8 @@ body, html {
     transition: margin-left .5s;
     margin: 0;
     height: 100%;
-    background-color: #f4f4f4; /* Cor de fundo suave */
-    color: #333; /* Cor de texto primária */
+    background-color: #000; /* Cor de fundo suave */
+    color: #fff; /* Cor de texto primária */
     text-align: center; /* Centraliza o texto */
     
 }
@@ -12,7 +12,7 @@ body, html {
 h1 {
   font-size: 2em; /* Tamanho da fonte */
   margin-top: 50px; /* Espaçamento superior */
-  color: #333; /* Cor do texto do título */
+  color: #fff; /* Cor do texto do título */
   
 }
 
@@ -29,13 +29,13 @@ h1 span {
 
 .about-me h2 {
   font-size: 2rem;
-  color: #333;
+  color: #fff;
   margin-bottom: 15px;
 }
 
 .about-me p {
   font-size: 1rem;
-  color: #555;
+  color: #fff;
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -45,7 +45,7 @@ h1 span {
   font-size: 1.75rem;
   text-align: center;
   margin: 40px 0 10px 0;
-  color: #333333; /* ou qualquer cor que combine com o seu esquema de design */
+  color: #fff; /* ou qualquer cor que combine com o seu esquema de design */
 }
 
 .tech-intro {
@@ -82,7 +82,7 @@ h1 span {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 25px;
-    color: #333;
+    color: #fff;
     display: block;
     transition: 0.3s;
 }
@@ -95,7 +95,7 @@ h1 span {
     position: absolute;
     top: 0;
     right: 25px;
-    color: #333;
+    color: #fff;
     font-size: 36px;
     margin-left: 50px;
 }
@@ -139,7 +139,7 @@ h1 span {
 }
 
 .navbar__logo {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
@@ -153,7 +153,7 @@ h1 span {
 
 .navbar__menu a {
   position: relative;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s;
   font-size: 20px;
@@ -401,7 +401,7 @@ pre {
       padding: calc(var(--size) / 15); /* Padding mantido */
       border: 2px solid #ccc; /* Borda mais grossa e azul */
       border-radius: 20px; /* Bordas mais arredondadas */
-      color: #333;
+      color: #fff;
       font-family: "Verdana", sans-serif;
       font-size: 16px; /* Tamanho de fonte mantido */
       margin: 0 var(--gap); /* Espaçamento horizontal mantido */
@@ -670,7 +670,7 @@ pre {
   border-radius: 10px;
   border: 2px solid #ccc;
   background: transparent; /* Remove o fundo */
-  color: #333;
+  color: #fff;
   font-family: "Verdana", sans-serif;
   font-size: 16px; /* Tamanho de fonte mantido */
   margin: 0 var(--gap); /* Espaçamento horizontal mantido */
@@ -680,9 +680,9 @@ pre {
 }
 
 .button a:hover {
-  background-color: #000; /* Altera o fundo para azul quando o mouse passa sobre */
-  color: white; /* Altera a cor do texto para branco */
-  border-color: #000; /* Altera a cor da borda para azul */
+  background-color: #fff; /* Altera o fundo para azul quando o mouse passa sobre */
+  color: #000; /* Altera a cor do texto para branco */
+  border-color: #ccc; /* Altera a cor da borda para azul */
 }
 
 
@@ -708,7 +708,7 @@ pre {
   margin-bottom: 20px;
   border-radius: 10px; /* Bordas arredondadas */
   background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Gradiente de fundo */
-  padding: 20px;
+  padding: 10px 20px;
   text-align: center;
 }
 
@@ -723,7 +723,7 @@ pre {
 }
 
 h3 {
-  color: #333; /* Cor do título */
+  color: #000; /* Cor do título */
   margin-bottom: 10px;
 }
 
