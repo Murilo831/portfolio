@@ -1,9 +1,10 @@
 
 body, html {
-    font-family: "Arial", sans-serif;
+    font-family: 'Roboto', sans-serif;
     transition: margin-left .5s;
     margin: 0;
     height: 100%;
+    text-align: center; /* Centraliza o texto */  
 }
 
 .container {

@@ -1,10 +1,9 @@
 body, html {
-    font-family: "Arial", sans-serif;
+    font-family: 'Roboto', sans-serif;
     transition: margin-left .5s;
     margin: 0;
     height: 100%;
-    text-align: center; /* Centraliza o texto */
-    
+    text-align: center; /* Centraliza o texto */  
 }
 
 h1 {
@@ -61,6 +60,32 @@ h1 span {
     z-index: 2;
     display: none;
 }
+
+/*Links sociais*/
+
+.social-links {
+  position: fixed;  /* Posiciona o contêiner de forma fixa na tela */
+  left: 0;          /* Alinha à esquerda da tela */
+  padding: 20px;
+  top: 50%;         /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajusta para centralizar perfeitamente */
+  display: flex;    /* Disposição flexível para os itens internos */
+  flex-direction: column; /* Itens um abaixo do outro */
+  gap: 10px;        /* Espaçamento entre os links */
+}
+
+.social-links a {
+  color: #000; /* ou qualquer cor desejada */
+  text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.social-links a:hover {
+  color: #555; /* Cor ao passar o mouse, se desejado */
+}
+/* Fim Links Sociais */
+
+
+/*sidebar*/
 
 .sidebar {
     height: 100%;
@@ -126,19 +151,24 @@ h1 span {
 }
 
 .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    width: calc(100% - 20px);  /* Subtrai o padding de ambos os lados */
-    box-sizing: border-box;  /* Adiciona box-sizing */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .navbar__logo {
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .navbar__menu {
@@ -223,7 +253,7 @@ h1 span {
   margin: 20px auto; /* Espaço acima do container */
   overflow: hidden; /* Esconde o overflow */
   width: 100%; /* Largura total */
-  max-width: 600px; /* Largura máxima */
+  max-width: 500px; /* Largura máxima */
   text-align: left;
   border-left: 5px solid #007bff;
   height: 300px;
@@ -242,7 +272,7 @@ pre {
 @media screen and (max-width: 1168px) {
   .left-content,
   .code-container {
-      max-width: 100%; /* Ocupa toda a largura em telas menores */
+      max-width: 80%; /* Ocupa toda a largura em telas menores */
       margin: 0; /* Remove margens em telas menores */
   }
 
@@ -621,7 +651,6 @@ pre {
 .p-img-projeto {
   width: 100%;
   height: auto;
-  border-radius: 15px;
   transition: transform 0.5s ease-in-out; 
 }
 
