@@ -61,6 +61,35 @@ h1 span {
     display: none;
 }
 
+.container-code, .area-description, .titulo {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/*
+.titulo {
+  
+  background-color: #FF851B;
+  
+}
+
+.container-code{
+  background-color: #2ECC40;
+}
+
+.area-description{
+  background-color: #39CCCC;
+
+}
+*/
+
+@media (max-height: 600px) {
+  .container-code, .area-description, .titulo {
+      min-height: 150vh; /* ou outro valor que se ajuste melhor */
+  }
+}
+
 /*Links sociais*/
 
 .social-links {
