@@ -112,9 +112,7 @@ h1 span {
     text-align: center;
 }
 
-/***/
-
-
+/***/s
 
 .navbar {
     height: 80px;  /* Adicionei 20px de altura adicional para acomodar o padding */
@@ -131,7 +129,8 @@ h1 span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 100px);  /* Subtrai o padding de ambos os lados */
+    padding: 20px;
+    width: calc(100% - 20px);  /* Subtrai o padding de ambos os lados */
     box-sizing: border-box;  /* Adiciona box-sizing */
 }
 
@@ -194,7 +193,6 @@ h1 span {
   flex-wrap: wrap; /* Permite que os itens se ajustem conforme o tamanho da tela */
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 20px;
 }
 
 .left-content{
