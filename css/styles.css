@@ -82,8 +82,39 @@ h1 span {
 .social-links a:hover {
   color: #555; /* Cor ao passar o mouse, se desejado */
 }
+.nav-dot.active {
+  background-color: blue; /* Ou qualquer cor que você preferir */
+}
+
 /* Fim Links Sociais */
 
+/* botão de navegação */
+
+.navigation-dots {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-dot {
+  height: 15px;
+  width: 15px;
+  background-color: grey;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-dot.active {
+  background-color: blue; /* Cor quando ativa */
+}
+
+/* fim do botão de navegação */
 
 /*sidebar*/
 
