@@ -69,7 +69,7 @@ h1 span {
     z-index: 200;
     top: 0;
     right: 0;  /* Alterado para right */
-    background-color: #000;
+    background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
