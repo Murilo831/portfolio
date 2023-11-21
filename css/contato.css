@@ -72,7 +72,7 @@ form button[type="submit"]:active {
 .mensagem {
     font-size: 25px;
     text-align: center;
-    color: #fff; /* Cor mais escura para dar ênfase */
+    color: #000; /* Cor mais escura para dar ênfase */
     font-weight: bold; /* Deixa o texto em negrito */
     max-width: 600px; /* Um pouco mais largo para acomodar a mensagem */
     margin: 0 auto 30px; /* Mais espaço na parte inferior para separação */
