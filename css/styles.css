@@ -705,7 +705,7 @@ pre {
   max-width: 350px;
   margin-bottom: 20px;
   border-radius: 10px; /* Bordas arredondadas */
-  background: linear-gradient(145deg, #e6e6e6, #000000); /* Gradiente de fundo */
+  background: linear-gradient(145deg, #e6e6e6, #fff); /* Gradiente de fundo */
   padding: 10px 20px;
   text-align: center;
 }
@@ -722,7 +722,7 @@ pre {
 .card:hover {
   box-shadow: 0 10px 20px 0 rgba(0,0,0,0.4);
   transform: scale(1.05);
-  background: linear-gradient(145deg, #f8f8f8, #000000); /* Fundo mais claro no hover */
+  background: linear-gradient(145deg, #f8f8f8, #fff); /* Fundo mais claro no hover */
 }
 
 .card:hover h3 {
